@@ -1,26 +1,23 @@
 import Profile from "./profile/profile";
+import face from "./profile/face.png";
 function App() {
+ 
   const person = [
     {
       Name:  'jed',
       bio: "hello i'm jed",
       prof: "web developer",
-      image:
-        "https://c8.alamy.com/zooms/9/6dfa69b4eb06485ab6e1eb8ab3eed896/mrpm90.jpg",
-    },
+      image: face},
     {
       Name:  'jed',
       bio: "hello i'm jed",
       prof: "web developer",
-      image:
-        "https://c8.alamy.com/zooms/9/6dfa69b4eb06485ab6e1eb8ab3eed896/mrpm90.jpg",
-    },
+      image: face },
     {
       Name:  'med',
       bio: "hello i'm jed",
       prof: "web developer",
-      image:
-        "https://c8.alamy.com/zooms/9/6dfa69b4eb06485ab6e1eb8ab3eed896/mrpm90.jpg",
+      image:face
     },
   ];
   const alertName = (x) => { void
