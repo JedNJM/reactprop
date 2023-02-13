@@ -1,16 +1,16 @@
 import React from "react";
-const Profile = (  alertClick, bio, prof, x,image) => {
+const Profile = (props) => {
   return (
     <>
         <img
-          src={image}
+          src={props.image}
           alt="fix"
           style={{ width: "150px", borderRadius: "50%" }}
         ></img>
-         <h1>{x}</h1>
-        <p>{bio}</p>
-        <h2>{prof}</h2>
-        <button onClick={() => alertClick(x)}>Click here Alert</button>
+         <h1>{props.x}</h1>
+        <p>{props.bio}</p>
+        <h2>{props.prof}</h2>
+        <button onClick={() => props.alertClick(props.x)}>Click here Alert</button>
         </ >
    
   );

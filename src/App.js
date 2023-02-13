@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Profile from "./profile/profile";
 function App() {
+  const person = [
+    {
+      Name:  'jed',
+      bio: "hello i'm jed",
+      prof: "web developer",
+      image:
+        "https://c8.alamy.com/zooms/9/6dfa69b4eb06485ab6e1eb8ab3eed896/mrpm90.jpg",
+    },
+    {
+      Name:  'jed',
+      bio: "hello i'm jed",
+      prof: "web developer",
+      image:
+        "https://c8.alamy.com/zooms/9/6dfa69b4eb06485ab6e1eb8ab3eed896/mrpm90.jpg",
+    },
+    {
+      Name:  'med',
+      bio: "hello i'm jed",
+      prof: "web developer",
+      image:
+        "https://c8.alamy.com/zooms/9/6dfa69b4eb06485ab6e1eb8ab3eed896/mrpm90.jpg",
+    },
+  ];
+  const alertName = (x) => { void
+    alert(x);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <> 
+      <div style={{ width: "400px", border: "2px solid black" }}>
+        {person.map((el) => 
+          <Profile
+          img={el.image}
+            x={el.Name}
+            bio={el.bio}
+            prof={el.prof}
+            alertClick={() => alertName(
+              el.Name)}
+          />
+        )}
+      </div>
+    </>
   );
 }
-
 export default App;
