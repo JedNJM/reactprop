@@ -9,7 +9,7 @@ function App() {
       prof: "web developer",
       image: face},
     {
-      Name:  'jed',
+      Name:  'yo',
       bio: "hello i'm jed",
       prof: "web developer",
       image: face },
@@ -32,7 +32,7 @@ function App() {
           img={el.image}
             x={el.Name}
             bio={el.bio}
-            prof={el.prof}
+            prof={el.prof} 
             alertClick={() => alertName(
               el.Name)}
           />
