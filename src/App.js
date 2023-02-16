@@ -4,18 +4,18 @@ function App() {
  
   const person = [
     {
-      Name:  'jed',
+      Name:  'Jed Njima',
       bio: "hello i'm jed",
       prof: "web developer",
       image: face},
     {
-      Name:  'yo',
-      bio: "hello i'm jed",
+      Name:  'Leila Rajah',
+      bio: "hello i'm Leila",
       prof: "web developer",
       image: face },
     {
-      Name:  'med',
-      bio: "hello i'm jed",
+      Name:  'Ahlem Touati',
+      bio: "hello i'm Ahlem",
       prof: "web developer",
       image:face
     },
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <> 
-      <div style={{ width: "400px", border: "2px solid black" }}>
+     
         {person.map((el) => 
           <Profile
           img={el.image}
@@ -37,7 +37,7 @@ function App() {
               el.Name)}
           />
         )}
-      </div>
+     
     </>
   );
 }
